@@ -12,7 +12,7 @@ interface Props {
 
 const CommentTableItem = ({ comment, fetchComments }: Props) => {
 
-  const { blog, createdAt, name, content, isApproved } = comment;
+  const { blog, createdAt, name, content } = comment;
   const BlogDate = new Date(createdAt);
   const { axios } = useAppContext();
 
