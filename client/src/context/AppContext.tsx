@@ -1,4 +1,6 @@
-import { createContext, ReactNode, useState, useContext, useEffect } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
+import type { ReactNode } from "react";
+
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";

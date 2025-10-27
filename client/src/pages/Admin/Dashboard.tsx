@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { assets, dashboard_data, type DashboardData } from "../../assets/assets"
+import { assets,  type DashboardData } from "../../assets/assets"
 import BlogTableItem from "../../components/admin/BlogTableItem"
 import { useAppContext } from "../../context/AppContext"
 import toast from "react-hot-toast"

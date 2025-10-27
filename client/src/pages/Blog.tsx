@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
-import { assets, blog_data, comments_data, type Comment } from "../assets/assets";
+import { assets, type Comment } from "../assets/assets";
 import Navbar from "../components/Navbar";
 import moment from "moment";
 import type { BlogType } from "../Types/types";
