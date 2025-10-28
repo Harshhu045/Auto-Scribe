@@ -18,10 +18,11 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:5173", // for local development
-      "https://auto-scribe-two.vercel.app", // ✅ your live frontend
+      "http://localhost:5173", // Local dev
+      "https://auto-scribe-two.vercel.app", // Your main frontend
+      "https://auto-scribe-880s5tqgy-harshhu045s-projects.vercel.app" // Optional: preview link
     ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // ✅ Added OPTIONS for preflight requests
     credentials: true,
   })
 );
