@@ -15,12 +15,17 @@ startServer();
 
 const app = express();
 
-app.use(cors({
-  origin: ["http://localhost:5173",
-    "https://auto-scribe-ashy.vercel.app"
-  ],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173", // for local development
+      "https://auto-scribe-two.vercel.app", // ✅ your live frontend
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
 
 app.use(express.json());
 
