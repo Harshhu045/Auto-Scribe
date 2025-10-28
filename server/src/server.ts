@@ -17,7 +17,7 @@ const app = express();
 
 app.use(cors({
   origin: ["http://localhost:5173",
-    "https://auto-scribe-ashy.vercel.app/"
+    "https://auto-scribe-ashy.vercel.app"
   ],
   credentials: true
 }));
